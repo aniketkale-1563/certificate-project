@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Bonafide Certificate</title>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" width="50" height="50">
+    </div>
+    <div class="header-text">
+      <h8>MAHAVIR EDUCATION TRUST'S</h8>
+      <h2>Shah & Anchor Kutchhi Engineering college</h2>
+    </div>
+  </header>
+
+  <div class="container details-form-container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4>Bonafide Certificate Deatils</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName"
+                  placeholder="FirstName MiddleName LastName">
+              </div>
+              <div class="form-group">
+                <label for="academicYear">Current Academic Year:</label>
+                <input type="text" class="form-control" id="academicYear" name="academicYear"
+                  placeholder="Enter The Academic Year" required>
+              </div>
+              <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" class="form-control" id="department" name="department"
+                  placeholder="Enter the department" required>
+              </div>
+              <div class="form-group">
+                <label for="idcard">ID Card:</label>
+                <input type="file" class="form-control" id="idcard" name="idcard" placeholder="Upload ID Card"
+                  accept=".pdf,.jpeg,.jpg" required>
+                <div id="fileSizeMessage">Max file size: 3 MB</div>
+              </div>
+              <div class="form-group">
+                <label for="fee">Fee Receipt:</label>
+                <input type="file" class="form-control" id="fee" name="fee" placeholder="Upload Fee Receipt"
+                  accept=".pdf,.jpeg,.jpg" required>
+                <div id="fileSizeMessage">Max file size: 3 MB</div>
+              </div>
+              <div class="form-group">
+                <label for="purpose">Purpose:</label>
+                <textarea class="form-control" id="purpose" name="purpose" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+</body>
+
+</html>
