@@ -1,20 +1,14 @@
+
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bonafide_details";
-
-// Create connection
-$conn = new mysqli($localhost, 
-	$root, $, $bonafide_details);
-
-// Check connection
-if ($conn->connect_error) {
-	die("Connection failed: "
-		. $conn->connect_error);
-		echo"";
+$hostname="localhost"; //local server name default localhost
+$username="root";  //mysql username default is root.
+$password="";       //blank if no password is set for mysql.
+$database="bonafide_details";  //database name which you created
+$con=mysql_connect($hostname,$username,$password);
+if(! $con)
+{
+die('Connection Failed'.mysql_error());
 }
 
-
+mysql_select_db($database,$con);
 ?>
