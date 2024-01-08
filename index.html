@@ -33,39 +33,39 @@
             <h4>Bonafide Certificate Deatils</h4>
           </div>
           <div class="card-body">
-            <form>
+            <form name="registration" method="post" action="registration.php">
               <div class="form-group">
                 <label for="fullName">Full Name:</label>
-                <input type="text" class="form-control" id="fullName" name="fullName"
+                <input type="text" class="form-control" id="fullName" name="fullName" value=""
                   placeholder="FirstName MiddleName LastName">
               </div>
               <div class="form-group">
                 <label for="academicYear">Current Academic Year:</label>
-                <input type="text" class="form-control" id="academicYear" name="academicYear"
+                <input type="text" class="form-control" id="academicYear" name="academicYear" value=""
                   placeholder="Enter The Academic Year" required>
               </div>
               <div class="form-group">
                 <label for="department">Department:</label>
-                <input type="text" class="form-control" id="department" name="department"
+                <input type="text" class="form-control" id="department" name="department" value=""
                   placeholder="Enter the department" required>
               </div>
               <div class="form-group">
                 <label for="idcard">ID Card:</label>
-                <input type="file" class="form-control" id="idcard" name="idcard" placeholder="Upload ID Card"
+                <input type="file" class="form-control" id="idcard" name="idcard" placeholder="Upload ID Card" value=""
                   accept=".pdf,.jpeg,.jpg" required>
                 <div id="fileSizeMessage">Max file size: 3 MB</div>
               </div>
               <div class="form-group">
                 <label for="fee">Fee Receipt:</label>
-                <input type="file" class="form-control" id="fee" name="fee" placeholder="Upload Fee Receipt"
+                <input type="file" class="form-control" id="fee" name="fee" placeholder="Upload Fee Receipt" value=""
                   accept=".pdf,.jpeg,.jpg" required>
                 <div id="fileSizeMessage">Max file size: 3 MB</div>
               </div>
               <div class="form-group">
                 <label for="purpose">Purpose:</label>
-                <textarea class="form-control" id="purpose" name="purpose" rows="3" required></textarea>
+                <textarea class="form-control" id="purpose" name="purpose" rows="3" value="" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
             </form>
           </div>
         </div>
