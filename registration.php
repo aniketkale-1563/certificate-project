@@ -1,3 +1,4 @@
+
 <?php     //start php tag
 //include connection.php page for database connection
 Include('connect.php')
@@ -10,7 +11,7 @@ Echo "please fill the empty field.";
 }
 Else
 {
-$sql="insert into student(full_name,current_academic_year,department) values('".$_REQUEST['full_name']."', '".$_REQUEST['current_academic_year']."', '".$_REQUEST['department']."','".$_REQUEST['id_card']."','".$_REQUEST['fee_receipt']."','".$_REQUEST['purpose']."')";
+$sql="insert into student(full_name,current_academic_year,department,id_card,fee_receipt,purpose) values('".$_REQUEST['full_name']."', '".$_REQUEST['current_academic_year']."', '".$_REQUEST['department']."','".$_REQUEST['id_card']."','".$_REQUEST['fee_receipt']."','".$_REQUEST['purpose']."')";
 $res=mysql_query($sql);
 If($res)
 {
