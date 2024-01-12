@@ -33,16 +33,16 @@
             <h4>Bonafide Certificate Deatils</h4>
           </div>
           <div class="card-body">
-            <form name="registration" method="post" action="registration.php">
+            <form name="registration" method="POST" action="process.php">
               <div class="form-group">
-                <label for="fullName">Full Name:</label>
-                <input type="text" class="form-control" id="fullName" name="fullName" value=""
-                  placeholder="FirstName MiddleName LastName">
+                <label for="fullname">Name Of The Student:</label>
+                <input type="text" class="form-control" id="fullname" name="fullname" value=""
+                  placeholder="FirstName MiddleName Surname" required>
               </div>
               <div class="form-group">
-                <label for="academicYear">Current Academic Year:</label>
-                <input type="text" class="form-control" id="academicYear" name="academicYear" value=""
-                  placeholder="Enter The Academic Year" required>
+                <label for="academicyear">Academic Year:</label>
+                <input type="text" class="form-control" id="academicyear" name="academicyear" value=""
+                  placeholder="Enter the Academic Year" required>
               </div>
               <div class="form-group">
                 <label for="department">Department:</label>
@@ -51,13 +51,13 @@
               </div>
               <div class="form-group">
                 <label for="idcard">ID Card:</label>
-                <input type="file" class="form-control" id="idcard" name="idcard" placeholder="Upload ID Card" value=""
+                <input type="file" class="form-control" id="idcard" name="id_card" placeholder="Upload ID Card" value=""
                   accept=".pdf,.jpeg,.jpg" required>
                 <div id="fileSizeMessage">Max file size: 3 MB</div>
               </div>
               <div class="form-group">
                 <label for="fee">Fee Receipt:</label>
-                <input type="file" class="form-control" id="fee" name="fee" placeholder="Upload Fee Receipt" value=""
+                <input type="file" class="form-control" id="fee" name="fee_receipt" placeholder="Upload Fee Receipt" value=""
                   accept=".pdf,.jpeg,.jpg" required>
                 <div id="fileSizeMessage">Max file size: 3 MB</div>
               </div>
